@@ -1,16 +1,262 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charSet="utf-8" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>SzkołaEventStormingu.pl</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/nivo-lightbox/nivo-lightbox.css">
+    <link rel="stylesheet" href="css/nivo-lightbox/nivo-lightbox-theme.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/modernizr.custom.js"></script>
+
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/owl-carousel.js"></script>
+    <script src="js/nivo-lightbox.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <!--<script src="js/jquery.ajaxchimp.min.js"></script>-->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".hideit").click(function () {
+                $(".overlay").hide();
+            });
+            $("#trigger-overlay").click(function () {
+                $(".overlay").show();
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+
+            $("#validate").click(function () {
+                validate();
+            });
+
+            var kawa = $('.top-bar');
+            var back = $('#back-to-top');
+            function scroll() {
+                if ($(window).scrollTop() > 700) {
+                    kawa.addClass('fixed');
+                    back.addClass('show-top');
+
+                } else {
+                    kawa.removeClass('fixed');
+                    back.removeClass('show-top');
+                }
+            }
+
+            document.onscroll = scroll;
+        });
+    </script>
+    <!--HHHHHHHHHHHH        Smooth Scrooling     HHHHHHHHHHHHHHHH-->
+    <script>
+        $(function () {
+            $('a[href*=#]:not([href=#])').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
 </head>
 
 <body>
-    <div id="__next">
-        <div>Hello World.
-            <!-- -->
+
+    <a href="#header" id="back-to-top" class="top">
+        <i class="fa fa-chevron-up"></i></a>
+    <!-- HHHHHHHHHHHHHHHHHH        Preloader          HHHHHHHHHHHHHHHH -->
+    <!-- <div id="preloader"></div> -->
+    <!-- HHHHHHHHHHHHHHHHHH        Header          HHHHHHHHHHHHHHHH -->
+    <section id="header" class="header">
+        <div class="top-bar">
+            <div class="container">
+            </div>
+            <!--/.container-->
         </div>
-    </div>
+        <!--/.top-bar-->
+
+        <div class="container">
+            <div class="starting">
+                <div class="row text-center">
+                    Szkoła EventStormingu
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="img/LUCY2.png" alt="LUCY" class="wow flipInY animated animated">
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="banner-text">
+                            <h2 class="animation-box wow bounceIn animated">
+                                <div class="postit">
+                                    <b class='big-text-ten'>10</b></br>
+                                    kroków do <b class='event-color big-text'>Event</b>
+                                    </br><b class='command-color big-text'>Stormingu</b>
+                                </div>
+                            </h2>
+                            <p>
+                                asdfsdaf
+                            </p>
+
+                        </div> <!-- /.banner-text -->
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <form>
+                        <div class="input-group wow animated fadeInLeft email">
+                            <span class="input-group-addon"><i class="fas fa-at"></i></span>
+                            <input id="email" type="text" class="form-control email" name="email"
+                                placeholder="Podaj swój email">
+                        </div>
+                        <div id="result" class="email_error">Proszę podać poprawny email.</div>
+                        <div class="btn btn-download wow animated fadeInRight" id="validate">
+                            <i class="fa fa-book"></i>
+                            <strong>POBIERAM</strong>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- /.starting -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /#header -->
+
+    <!-- HHHHHHHHHHHHHHHHHH        Bigfeature         HHHHHHHHHHHHHHHH -->
+    <section id="bigfeatures" class="img-block-3col wrapper">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <ul class="item-list-right item-list-big">
+                        <li class="wow fadeInLeft animated"> <i class="fa fa-film"></i>
+                            <h3>Responsive design</h3>
+                            <p>Your project looks great on any device. Content can be easily read and a user understands
+                                freely what you wanted.</p>
+                        </li>
+                        <li class="wow fadeInLeft animated"> <i class="fa fa-bolt"></i>
+                            <h3>6 Color schemes</h3>
+                            <p>The set of ready made CSS files with different color schemes will help you in quick
+                                landing’s adaptation according to your benchmark style.</p>
+                        </li>
+                        <li class="wow fadeInLeft animated"> <i class="fa fa-heart"></i>
+                            <h3>PSD Is Included </h3>
+                            <p>The graphic source file in PSD format is included in the archive.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-sm-push-4">
+                    <ul class="item-list-left item-list-big">
+                        <li class="wow fadeInRight animated"> <i class="fa fa-life-ring"></i>
+                            <h3>Well Documentation</h3>
+                            <p>LUCY is shipped with well documented moduler codes. Meaningfull Comments in code will
+                                help you to customize it easily.</p>
+                        </li>
+                        <li class="wow fadeInRight animated"> <i class="fa fa-lock"></i>
+                            <h3>Easily Customizable</h3>
+                            <p>LUCY is easy to customize. No heavy coding is required to customize it with your real
+                                contents.</p>
+                        </li>
+                        <li class="wow fadeInRight animated"> <i class="fa fa-star"></i>
+                            <h3>Future Support</h3>
+                            <p>We will update LUCY and fix bugs if you found one for a long time.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-sm-pull-4 text-center">
+                    <div class="animation-box wow bounceIn animated">
+                        <img class="highlight-left wow animated" src="img/spark.png" height="192" width="48" alt="">
+                        <img class="highlight-right wow animated" src="img/spark.png" height="192" width="48" alt="">
+                        <img class="screen" src="img/front.png" alt="" height="581" width="300">
+                    </div>
+                </div>
+            </div>
+        </div> <!-- /.container -->
+    </section> <!-- /#bigfeatures -->
+
+    <!-- HHHHHHHHHHHHHHHHHH        Speciality         HHHHHHHHHHHHHHHH -->
+    <div id="speciality" class="wrapper">
+        <div class="container">
+            <h2 class="animation-box wow bounceIn animated">
+                <img class="screen" src="img/gocom.jpg" alt="" width="400">
+            </h2>
+            <div class="virticle-line"></div>
+            <div class="row border">
+                <div class="col-sm-4 wow animated fadeInLeft">
+                    <div class="special-icon">
+                        <i class="fas fa-keyboard"></i>
+                    </div>
+                    <h3>Programista</h3>
+                    <p>
+                        Od kąd sięgam pamięciom to zawsze programowałem. To moja pasja i zawód. Moje zainteresowania
+                        skierowane są także w obszar rozpoznawania i implementacji warstwy domenowej w aplikacjach.
+                    </p>
+                </div>
+                <div class="col-sm-4 animation-box wow bounceIn animated">
+                    <div class="special-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Prelegent</h3>
+                    <p>
+                        Your project looks great on any device. Content can be easily read and a user understands
+                        freely.
+                    </p>
+                </div>
+                <div class="col-sm-4 wow animated fadeInRight">
+                    <div class="special-icon">
+                        <i class="fab fa-blogger-b"></i>
+                    </div>
+                    <h3>Bloger</h3>
+                    <p>
+                        Your project looks great on any device. Content can be easily read and a user understands
+                        freely.
+                    </p>
+                </div>
+
+            </div> <!-- /.row -->
+            <div class="virticle-line"></div>
+            <h2 class="animation-box wow bounceIn animated">
+                <a href="https://mrdev.pl"><img class="screen" src="img/logo.png" alt="MrDev.pl"></a>
+            </h2>
+        </div> <!-- /.container -->
+    </div> <!-- /#speciality -->
+
+    <!-- HHHHHHHHHHHHHHHHHH        Footer          HHHHHHHHHHHHHHHH -->
+    <section id="footer" class="wrapper">
+        <div class="container text-center">
+            <div>Pobierając poradnik dodam Cię do listy mailowej, z której możesz się wypisać w dowolnym momencie (jeden
+                klik).</div>
+            <div>© 2019 GemuStudio Krzysztof Owsiany</div>
+            <a href="http://www.themewagon.com">Polityka Prywatności</a>
+        </div><!-- container -->
+    </section>
+
+
+
 </body>
 
 </html>
