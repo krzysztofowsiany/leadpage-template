@@ -1,12 +1,5 @@
-/*HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
-HH				Imports
-HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,100,300,500,700);
 
-
-/*HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
-HH				Global
-HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
 body{
 	font-family: Raleway;
     position: relative;
@@ -60,7 +53,7 @@ p{
 .virticle-line{
     height: 40px;
     width: 2px;
-    margin: 2px auto 2px;
+    margin: 0px auto 0px;
     border-left: 4px dotted #888;
 }
 .circle_top{
@@ -96,7 +89,35 @@ div.border {
     border-radius: 10px;
     border: 4px dotted #888;
     padding: 10px;
+    margin: 10px;
+    
 }
+
+.author {
+    background: rgba(246, 191, 88, 0.363);
+    color: black;
+    padding: 5px 10px;
+    font-size: 22px;
+}
+
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #888;
+    margin: 2px auto 2px;
+  }
+
+.arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    
+    border-bottom: 10px solid  #888;
+    margin: 2px auto 2px;
+  }
 
 div.email_error {
     height: 60px;
@@ -109,6 +130,19 @@ div.email_error {
     padding: 10px;
     margin:10px auto 20px;
 }
+
+div.email_row{
+    width:400px;
+    margin: 10px auto 20px;
+}
+
+div.document{
+    width:500px;
+    margin: 10px auto;
+}
+
+
+
 
 /*HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
 HH 		Overlay style
@@ -224,7 +258,6 @@ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
 HH				Header
 HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
 .header{
-    height: 90vh;
     background: url(../img/bigpicture.jpg) repeat center center;
 	/*background: linear-gradient(50deg, orange, rgb(255, 100, 0));*/
     padding: 45px 0px;
@@ -1145,76 +1178,41 @@ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
 }
 
 
-/* EVENT STORMING
-*/
-.event-color {
-    color: #ff8b00;
-}
 
-.command-color {
-    color: #25abfe;
-}
 
-.external-system-color {
-    color: violet;
-}
 
-.policy-color {
-    color: purple;
-}
 
-.aggregate-color {
-    color: yellow;
-}
 
-.read-model-color {
-    color: green;
-}
+/* NAVIGATION */
 
-.big-text {
-    font-size: 60px;
-    font-weight: bold;
-}
-.big-text-ten {
-    font-size: 100px;
-}
-
-.postit {
-    line-height: 1;
-    text-align:center;   
+/*
+ul.bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: orange;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
     color: black;
-    font-weight: bold;  
-    width:400px;    
-    min-height:350px;
-    max-height:350px;
-    position:relative;
-    border:1px solid #E8E8E8;  
-    border-top:40px solid #fdfd86;
-    font-size:42px;      
-    border-bottom-right-radius: 60px 5px;
-    display:inline-block;    
-     background: #ffff88; /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #ffff88 81%, #ffff88 82%, #ffff88 82%, #ffffc6 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(81%,#ffff88), color-stop(82%,#ffff88), color-stop(82%,#ffff88), color-stop(100%,#ffffc6)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(-45deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(-45deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(-45deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%); /* IE10+ */
-  background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff88', endColorstr='#ffffc6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
   }
+  
+  li a:hover {
+    background-color: #111;
+  }
+*/
+
+  
+ 
+
+
    
-  .postit:after {     
-     content: "";
-    position:absolute;
-    z-index:-1;
-    right:-0px; bottom:20px;
-    width:200px;
-    height: 25px;
-    background: rgba(0, 0, 0, 0.2);
-    box-shadow:2px 15px 5px rgba(0, 0, 0, 0.40);
-  -moz-transform: matrix(-1, -0.1, 0, 1, 0, 0);
-   -webkit-transform: matrix(-1, -0.1, 0, 1, 0, 0);
-        -o-transform: matrix(-1, -0.1, 0, 1, 0, 0);
-       -ms-transform: matrix(-1, -0.1, 0, 1, 0, 0);
-           transform: matrix(-1, -0.1, 0, 1, 0, 0);
-  }

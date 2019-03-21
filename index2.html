@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>SzkołaEventStormingu.pl</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/postit.css">
+    <script src="js/modernizr.custom.js"></script>
+
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $("#validate").click(function () {
+                validate();
+            });
+
+            $('.smooth-goto').on('click', function () {
+                $('html, body').animate({ scrollTop: $(this.hash).offset().top - 50 }, 1000);
+                return false;
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        Szkoła EventStormingu
+        <nav class="row text-center">
+            <ul class="bar">
+                <a href="#author" class="smooth-goto postit-menu">
+                    <div class="rotate-plus3">
+                        <li>Autor</li>
+                    </div>
+                </a>
+
+
+                <div class="rotate-minus3">
+                    <a href="#download" class="smooth-goto postit-menu postit-menu-read-model">
+                        <li>Pobieram</li>
+                    </a>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="header text-center">
+        <div class="row text-center">
+            Szkoła EventStormingu
+        </div>
+        <div class="postit">
+            <b class='big-text-ten'>10</b></br>
+            kroków do</br>
+            <b class='event-color big-text'>Event</b></br>
+            <b class='command-color big-text'>Stormingu</b>
+        </div>
+    </section>
+
+    <section id="download">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-auto">
+                    <div class="border document">
+                        <img class="screen" src="img/mb2.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="virticle-line"></div>
+            <div class="arrow-down"></div>
+            <div class="row text-center">
+                <div class="border email_row">
+                    <form>
+                        <div class="input-group email">
+                            <input id="email" type="text" class="form-control email" name="email"
+                                placeholder="Podaj swój email">
+                        </div>
+                        <div id="result" class="email_error">Proszę podać poprawny email.</div>
+                        <div class="btn btn-download" id="validate">
+                            <i class="fa fa-book"></i>
+                            <strong>POBIERAM</strong>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="author" id="author">
+        <div class="container ">
+            <div class="row text-center">
+                <div class="col-md-auto">
+                    <img class="screen" src="img/gocom.jpg" alt="" width="400">
+                </div>
+            </div>
+
+
+            <div class="row justify-content-md-center">
+                <div class="col-md-auto">
+                    <div class="virticle-line"></div>
+                    <div class="arrow-down"></div>
+                    <div class="row border">
+                        <div class="col-sm-4">
+                            <div class="special-icon">
+                                <i class="fas fa-keyboard"></i>
+                            </div>
+                            <h3>Programista</h3>
+                            <p>
+                                Od kąd sięgam pamięciom to zawsze programowałem. To moja pasja i zawód. Moje
+                                zainteresowania
+                                skierowane są także w obszar rozpoznawania i implementacji warstwy domenowej w
+                                aplikacjach.
+                            </p>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="special-icon">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                            </div>
+                            <h3>Prelegent</h3>
+                            <p>
+                                Your project looks great on any device. Content can be easily read and a user
+                                understands
+                                freely.
+                            </p>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="special-icon">
+                                <i class="fab fa-blogger-b"></i>
+                            </div>
+                            <h3>Bloger</h3>
+                            <p>
+                                Your project looks great on any device. Content can be easily read and a user
+                                understands
+                                freely.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="arrow-up"></div>
+                    <div class="virticle-line"></div>
+                    <div class="row text-center">
+                        <div class="col-md-auto">
+                            <a href="https://mrdev.pl"><img class="screen" src="img/logo.png" alt="MrDev.pl"></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </section>
+
+    <footer>
+        <div class="text-center">
+            <div>Pobierając poradnik dodam Cię do listy mailowej, z której możesz się wypisać w dowolnym momencie (jeden
+                klik).</div>
+            <div>© 2019 GemuStudio Krzysztof Owsiany</div>
+            <a href="http://www.themewagon.com">Polityka Prywatności</a>
+        </div>
+    </footer>
+</body>
+
+</html>
